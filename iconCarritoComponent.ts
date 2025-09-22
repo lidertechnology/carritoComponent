@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ControladorService } from '../servicios/controlador.service';
 
 @Component({
-  selector: 'app-resumen-carrito',
+  selector: 'app-icon-carrito',
   standalone: true,
   imports: [MatToolbarModule, MatIconModule, MatBadgeModule, MatButtonModule],
   template: `
@@ -16,6 +16,8 @@ import { ControladorService } from '../servicios/controlador.service';
         </button>
   `,
 })
-export class ResumenCarritoComponent {
+export class IconCarritoComponent {
   public readonly controladorService = inject(ControladorService);
 }
+
+// Es el componente que muestra la cantidad de productos que estan dentro del carrito de compras.
